@@ -1,0 +1,4 @@
+name: Update pyenv
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
