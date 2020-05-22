@@ -2,6 +2,8 @@
 FROM alpine:3.10
 
 RUN apk update \
+ && apk add curl \
+ && apk add bash \
  && apk add jq \
  && rm -rf /var/cache/apk/*
 

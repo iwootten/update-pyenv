@@ -1,6 +1,12 @@
 #!/bin/bash
 
 pyenv_file=.python-version
+
+if [ ! -f "$pyenv_file" ]; then
+    echo ".python-version not found, exiting"
+    exit
+fi
+
 current_version=$(cat $pyenv_file)
 
 get_major_python_version(){
