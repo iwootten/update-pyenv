@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pyenv_file=$GITHUB_WORKSPACE/${GITHUB_WORKSPACE##*/}/.python-version
+pyenv_file=/github/workspace/.python-version
 current_version=$(cat $pyenv_file)
 
 get_major_python_version(){
