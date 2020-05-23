@@ -29,3 +29,5 @@ if [ $current_version != $latest_version ]; then
     echo "Versions differ, updating .python-version"
     echo $latest_version > $pyenv_file
 fi
+echo "::set-output name=original-version::$current_version"
+echo "::set-output name=python-version::$latest_version"

@@ -2,3 +2,8 @@ name: Update pyenv
 runs:
   using: 'docker'
   image: 'Dockerfile'
+outputs:
+  original-version:
+    description: The original version in the .python-version file
+  python-version:
+    description: The latest available patch version of the current minor version
