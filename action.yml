@@ -1,9 +1,11 @@
-name: Update pyenv
+name: Update .python-version
 runs:
   using: 'docker'
   image: 'Dockerfile'
 outputs:
   original-version:
     description: The original version in the .python-version file
-  python-version:
+  latest-version:
     description: The latest available patch version of the current minor version
+  updated:
+    description: Boolean to indicate whether the .python-version was updated
