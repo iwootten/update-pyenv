@@ -35,6 +35,6 @@ You can use this in combination with [actions/checkout](https://github.com/peter
 
 | Name | Description |
 |------|-------------|
-| original_version | The version originally specified in the .python-version file |
-| latest_version | The latest patch version |
+| original-version | The version originally specified in the .python-version file |
+| latest-version | The latest patch version |
 | updated | Boolean which indicates if the .python-version was updated
